@@ -1,10 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int sensorID = 99;
-    float tempRead = 12.34;
-    char status = 'A';
-//hi
-    printf("The sensor ID: %d, \nthe temperature reading is: %.2f, \nstatus code: %c", sensorID, tempRead, status);
+    int numberEnter;
+    int tens;
+    int ones;
+
+    printf("Enter a two digit number: ");
+    scanf("%d", &numberEnter);
+
+    tens = numberEnter / 10;
+    ones = numberEnter % 10;
+
+    printf("%d%d", ones, tens);
+
     return 0;
 }
