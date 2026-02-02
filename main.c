@@ -1,17 +1,16 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    int numberEnter;
-    int tens;
-    int ones;
+    float height;
+    float length;
+    float hipotenuse;
+    printf ("please enter height: ");
+    scanf ("%f", &height);
+    printf ("please enter length: ");
+    scanf ("%f", &length);
 
-    printf("Enter a two digit number: ");
-    scanf("%d", &numberEnter);
-
-    tens = numberEnter / 10;
-    ones = numberEnter % 10;
-
-    printf("%d%d", ones, tens);
-
+    hipotenuse = sqrt(height*height + length*length);
+    printf("hipotenuse = %f", hipotenuse);
     return 0;
 }
